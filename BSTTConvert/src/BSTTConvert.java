@@ -99,7 +99,13 @@ public class BSTTConvert {
 			out2.close();
 			in2.close();
 
+			firstLine = true;
 			for (String s = ""; (s = in3.readLine()) != null;) {
+
+				if (firstLine) {
+					s = removeUTF8BOM(s);
+					firstLine = false;
+				}
 
 				out3.write(s + "\n");
 				out3.flush();
