@@ -80,6 +80,7 @@ public class BSTTConvert {
 				out1.flush();
 
 			}
+			
 
 			out1.close();
 			in1.close();
@@ -100,6 +101,7 @@ public class BSTTConvert {
 			in2.close();
 
 			firstLine = true;
+			
 			for (String s = ""; (s = in3.readLine()) != null;) {
 
 				if (firstLine) {
